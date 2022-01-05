@@ -1,0 +1,42 @@
+.parent{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+}
+.parent>.card{
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    border: 2px solid blue;
+    background-color: rgb(235, 219, 198);
+}
+button{
+    width: 200px;
+    color: blue;
+}
+img{
+    width: 200px;
+}
+
+
+@media only screen {min-width: 320px;} and {max-width: 480px;}
+.parent{
+    display: flex;
+    flex-direction: column;
+}
+.parent>.card{
+    width: 90%;
+}
+
+
+@media only screen {min-width: 481px;} and {max-width: 768px;}
+{
+.parent{
+    display: flex;
+    flex-direction: column;
+}
+.parent>.card{
+    width: 90%;
+}
+}
